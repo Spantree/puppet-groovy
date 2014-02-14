@@ -65,6 +65,6 @@ class groovy (
 
   file { '/usr/share/groovy':
     ensure  => link,
-    target  => "/opt/groovy/${version_real}"
+    target  => $target_real
   }
 }
