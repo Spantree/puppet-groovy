@@ -60,7 +60,11 @@ class groovy (
   file { '/etc/profile.d/groovy.sh':
     ensure  => file,
     mode    => '0644',
-    content => template("${module_name}/groovy.sh.erb"),
+    content => template("${module_name}/groovy.sh.erb")
   }
 
+  file { '/usr/share/groovy':
+    ensure  => link,
+    target  => "/opt/groovy/${version_real}"
+  }
 }
