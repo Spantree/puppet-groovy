@@ -7,4 +7,4 @@ summary 'Puppet module for installing Groovy from the official distribution.'
 description 'This module installs Groovy from the offical project site.'
 project_page 'https://github.com/sherzberg/puppet-groovy'
 
-dependency 'smarchive/archive', '0.1.1'
+dependency 'gini/archive', '0.2.0'
